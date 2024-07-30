@@ -1,0 +1,11 @@
+name: Simple action onpush
+on: [push]
+
+jobs:
+  some_simple_task:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          npm -v
+          python -v
+      - run: echo "test action finished"

@@ -5,7 +5,9 @@ jobs:
   some_simple_task:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: check version
+        run: |
           npm -v
           python -v
-      - run: echo "test action finished"
+      - name: job done
+        run: echo "test action finished"

@@ -1,1 +1,1 @@
-# git-hub-actions
+# simple git hub actions practice

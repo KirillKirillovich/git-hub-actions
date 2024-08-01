@@ -1,0 +1,14 @@
+name: Basic CI workflow
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  basic_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: check folder
+        run: ls -a

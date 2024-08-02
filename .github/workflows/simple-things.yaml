@@ -1,6 +1,6 @@
 name: simple things
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   simple_actions:

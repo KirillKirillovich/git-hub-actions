@@ -1,7 +1,7 @@
 name: Multipe version workflow
 run-name: Matrix usage
 on:
-  workflow_dispatch:
+  workflow_dispatch
 
 jobs:
   multiple_node_versions:

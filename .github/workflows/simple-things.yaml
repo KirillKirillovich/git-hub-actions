@@ -1,6 +1,8 @@
 name: simple things
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - 'dev'
 
 jobs:
   simple_actions:

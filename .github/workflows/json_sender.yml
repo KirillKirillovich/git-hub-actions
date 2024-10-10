@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Send test notify message
         run: |
-          curl -X POST https://admin.challengeme.top/gcloud/telegram \
+          curl -X POST ${{ vars.TELEGRAM_CHME_REPORTS_PATH }} \
           -H "Content-Type: application/json" \
           -d '{"message": "test notify"}'
 

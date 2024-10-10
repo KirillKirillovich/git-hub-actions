@@ -1,0 +1,15 @@
+name: Json sender
+on:
+  workflow_call:
+          
+    
+jobs:
+  send_notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test notify message
+        run: |
+          curl -X POST https://admin.challengeme.top/gcloud/telegram \
+          -H "Content-Type: application/json" \
+          -d '{"message": "test notify"}'
+

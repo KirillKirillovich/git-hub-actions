@@ -14,7 +14,7 @@ jobs:
             "workflow": "'"${{ github.workflow }}"'",
             "run_id": "'"${{ github.run_id }}"'",
             "run_url": "'"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"'",
-            "message": "GitHub Workflow Notification: Workflow '\''${{ github.workflow }}'\'' from repository '\''${{ github.repository }}'\'' failed. View details at: '\''${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'\''
+            "message": "❌ GitHub Workflow Notification: Workflow '\''${{ github.workflow }}'\'' from repository '\''${{ github.repository }}'\'' failed. View details at: '\''${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'\''
           }')
           echo "$JSON_PAYLOAD" > output.json
 
